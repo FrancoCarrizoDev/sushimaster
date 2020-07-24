@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="form-container">
+        <h2 class="animate__animated animate__bounce">{{title}}</h2>
+
+        <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
+            <p>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" #name="ngModel" [(ngModel)]="forms.nombre">
+            </p>
+
+            <p>
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" #name="ngModel" [(ngModel)]="forms.apellido">
+            </p>
+
+            <p>
+                <label for="numero">Celular</label>
+                <input type="text" name="numero" #name="ngModel" [(ngModel)]="forms.numero">
+            </p>
+
+            <p>
+                <label for="email">Email</label>
+                <input type="email" name="nombre" #name="ngModel" [(ngModel)]="forms.email">
+            </p>
+
+            <p>
+                <label for="curso">Curso</label>
+                <input type="text" name="curso" #name="ngModel" [(ngModel)]="forms.curso">
+            </p>
+
+            <input type="submit" value="¡Quiero que me Contacten!">
+        </form>
+    </div>
+    <div class="contact-img">
+        <img src="../../../assets/img/chef700.jpg" alt="">
+    </div>
+</div>

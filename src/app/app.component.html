@@ -1,0 +1,56 @@
+<div id="wrap-header">
+    <header>
+        <h1><a [routerLink]="['/inicio']"> Sushi Master <i class="fas fa-graduation-cap"></i></a></h1>
+        <div id="contact-info">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a [routerLink]="['/inicio']" [routerLinkActive]="['actived']">Inicio</a></li>
+            <li><a [routerLink]="['/talleres']" [routerLinkActive]="['actived']">Talleres</a></li>
+            <li><a [routerLink]="['/eventos']" [routerLinkActive]="['actived']">Eventos</a></li>
+            <li><a [routerLink]="['/galeria']" [routerLinkActive]="['actived']">Galería</a></li>
+            <li><a [routerLink]="['/contacto']" [routerLinkActive]="['actived']">Contacto</a></li>
+        </ul>
+    </nav>
+    <hr>
+
+</div>
+
+<section id="content">
+    <router-outlet></router-outlet>
+</section>
+
+<footer>
+    <div>
+        <h4>Preguntas Frecuentes</h4>
+        <ul>
+            <li><a href="# ">Lorem, ipsum dolor.</a></li>
+            <li><a href="# ">Lorem, ipsum dolor.</a></li>
+            <li><a href="# ">Lorem, ipsum dolor.</a></li>
+        </ul>
+    </div>
+    <div>
+        <h4>Enlaces de Interés</h4>
+        <ul>
+            <li><a href="# ">Lorem, ipsum dolor.</a></li>
+            <li><a href="# ">Lorem, ipsum dolor.</a></li>
+            <li><a href="# ">Lorem, ipsum dolor.</a></li>
+        </ul>
+    </div>
+    <div>
+        <h4 id="footer-contact ">Contacto</h4>
+        <ul>
+            <li><a href="# ">Lorem, ipsum dolor.</a></li>
+            <li><a href="# ">Lorem, ipsum dolor.</a></li>
+            <li><a href="# ">Lorem, ipsum dolor.</a></li>
+        </ul>
+    </div>
+    <div id="copy">
+        <p>Todos los derechos reservados &copy; 2020</p>
+    </div>
+
+</footer>
